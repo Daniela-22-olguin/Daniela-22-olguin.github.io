@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Roll over</title>
+	<style>
+		
+		#mensaje{
+			display: none;
+		}
+		#boton:hover{
+			cursor:  pointer;
+			opacity: 0.5;
+			fill: yellow;
+		}
+	</style>
+</head>
+<body>
+	<svg width="1280" height="1080" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<image xlink:href="imagen/tiburon.jpg"/>
+<!--inicia mensaje-->
+ <g id="mensaje">
+  <title>Layer 1</title>
+  <path transform="rotate(-148.329 604.165 362.718)" id="svg_2" d="m583.16508,426.21804l21.00002,-126.99998l21.00002,126.99998l-42.00004,0z" stroke="#000" fill="#000000"/>
+  <rect rx="25" id="svg_1" height="164" width="300" y="172" x="497" stroke="#000" fill="#000000"/>
+  <text style="cursor: move;" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Changa'" font-size="24" stroke-width="0" id="svg_3" y="245" x="588" stroke="#000" fill="#ffffff">Hola :3</text>
+  </g>
+  <!--termina mensaje-->
+ <!--Esta elipse funciona como boton-->
+  <ellipse stroke="none" ry="52.5" rx="51.5" id="boton" cy="452.5" cx="323.5" stroke-width="0" fill="#ff0000" opacity="1">
+
+    <animate 
+     xlink:href="#mensaje"
+     fill="freeze" 
+     dur="0.2s" 
+     begin="boton.mouseover"
+      attributeName="display"
+      from="none" 
+      to="block" 
+      />
+    <animate 
+     xlink:href="#mensaje"
+     fill="freeze" 
+     dur="0.2s" 
+     begin="boton.mouseout"
+      attributeName="display"
+      from="block" 
+      to="none" 
+      />
+</svg>
+</body>
+</html>

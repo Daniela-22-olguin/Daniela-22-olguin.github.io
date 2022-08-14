@@ -1,0 +1,10 @@
+<svg width="1280" height="1080" xmlns="http://www.w3.org/2000/svg">
+ <g id="Layer_1">
+  <title>Layer 1</title>
+  <path transform="rotate(-148.329 604.165 362.718)" id="svg_2" d="m583.16508,426.21804l21.00002,-126.99998l21.00002,126.99998l-42.00004,0z" stroke="#000" fill="#000000"/>
+  <rect rx="25" id="svg_1" height="164" width="300" y="172" x="497" stroke="#000" fill="#000000"/>
+  <text style="cursor: move;" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Changa'" font-size="24" stroke-width="0" id="svg_3" y="245" x="588" stroke="#000" fill="#ffffff">Hola :3</text>
+  </g>
+  <ellipse stroke="#000" ry="52.5" rx="51.5" id="svg_4" cy="452.5" cx="323.5" stroke-width="0" fill="#ff0000"/>
+ 
+</svg>
