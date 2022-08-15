@@ -1,77 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>X3D</title>
-    <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script> 
-    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'>
-</head>
-<body background='texturas/espacio.jpg'>
-    <x3d>
-    	<scene>
-<transform DEF="SSolar">
-    		<shape>
-    			<appearance>
-                     <imageTexture url='texturas/csol.jpg'/>
-                 </appearance>
-                 <sphere />
-    		</shape>
+  <head>
+    <title>Segunda evaluación DOA</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-            
-<!--planeta mercurio-->
-<transform translation="2 0 0" scale="0.2 0.2 0.2">
-    <inline url="mercurio.x3d"></inline>
-</transform>
-<!--planeta venus-->
-<transform translation="0 0 3" scale="0.3 0.3 0.3">
-    <inline url="venus.x3d"></inline>
-</transform>
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-<!--planeta tierra-->
-<transform translation="0 0 5" scale="0.5 0.5 0.5">
-    <inline url="tierra.x3d"></inline>
-</transform>
+  </head>
+  <!--carousel-->
+  <body>
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="3" aria-label="Fourth slide"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img src="jake.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img src="cubo.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img src="araña.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img src="enano.png" alt="Fourth slide">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--termina carrusel--> 
+   
+    <!--Menu de navegación--> 
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">Segunda evaluación o Home DOA</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Sistemasolar svg/index.html">Sistema solar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="roll over. svg/rollover.html">Rollover</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Solar/solarindex.html">Solar <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="DOAexamen1/index.html">Examen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Realidadvirtual1/index.html">Sistema solar 3D</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Conciertovirtual/index.html">Concierto virtual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Plugins/index.html">Plugins</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="unplugins/personaje.html">Enano animado</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jake.png">Patt personalizado</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cubo.jpg">Cubo con marcadores</a>
+                    </li>
+                    <!--Tareavirtual-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Animaciones 3D</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="personajeuno/personaje.html">Animación 1</a>
+                            <a class="dropdown-item" href="personajeuno - copia/personaje.html">Animación 2</a>
+                            <a class="dropdown-item" href="personajetres/personaje.html">Animación 3</a>
+                        </div>
+                    </li>
 
-<!--planeta luna-->
-<transform translation="-1 0 4" scale="-0.2 -0.2 -0.2">
-    <inline url="luna.x3d"></inline>
-</transform>
+                </ul>
+                
+            </div>
+      </div>
+    </nav>
+    
+    <div class="content">
+        <row>
+            <div class="colsm-8"></div>
+            <div class="col-sm-4"></div>
+        </row>
+    </div>
+    
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 
-<!--planeta marte-->
-<transform translation="0 0 6" scale="0.3 0.3 0.3">
-    <inline url="marte.x3d"></inline>
-</transform>
-
-<!--planeta jupiter-->
-<transform translation="0 0 7" scale="0.5 0.5 0.5">
-    <inline url="jupiter.x3d"></inline>
-</transform>
-
-<!--planeta saturno-->
-<transform translation="0 0 8" scale="0.4 0.4 0.4">
-    <inline url="saturno.x3d"></inline>
-</transform>
-
-<!--planeta urano-->
-<transform translation="0 0 9" scale="0.3 0.3 0.3">
-    <inline url="urano.x3d"></inline>
-</transform>
-
-<!--planeta neptuno-->
-<transform translation="0 0 10" scale="0.2 0.2 0.2">
-    <inline url="neptuno.x3d"></inline>
-</transform>
-
-
-<!-- Parámetros de animación: sensor de tiempo y cuál eje se animará -->
-                <timeSensor DEF='timer' cycleInterval='10' loop='true'></timeSensor>
-                <orientationInterpolator DEF='rotator' key='0 0.5 1' keyValue='0 1 0 0 0 1 0 3.14 0 1 0 6.28'>
-                </orientationInterpolator>
-            </transform>
-            <!-- ROUTE canaliza el sensor de tiempo y la rotación al transform -->
-            <ROUTE fromNode='timer' fromField='fraction_changed' toNode='rotator' toField='set_fraction'></ROUTE>
-            <ROUTE fromNode='rotator' fromField='value_changed' toNode='SSolar' toField='set_rotation'></ROUTE>
-    	</scene>
-    </x3d>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    
+  </body>
 </html>
